@@ -1,0 +1,33 @@
+
+ 
+
+  .content {
+    display: flex;
+    margin: 82px auto 32px;
+    padding: 0 16px;
+    max-width: 960px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header{
+    // position: absolute;
+    // top: 0;
+    // left: 10%;
+    // right: 10%;
+    
+    width: 80%;
+    margin-left: 10%;
+}
+  .custom-content{
+    width: 80%;
+    padding: 0 !important;
+    background-color:#ececec;
+    margin-left: 10%;
+}
+
+.footer{
+    width: 80%;
+    margin-left: 10%;
+    // height: 300px;
+}
