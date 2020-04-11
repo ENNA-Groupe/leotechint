@@ -1,36 +1,59 @@
 <div id="header">
     <div class="logo">
-        <img src="./assets/img/logo1.png" width="200" alt="LEOTECH">
+        <img *ngIf="!menu"  src="./assets/img/logo1.png" width="200" alt="LEOTECH">
+        <img   *ngIf="menu==='leotech-corporate'" src="./assets/img/corporate.png" width="200" alt="LEOTECH HOME">
+        <img   *ngIf="menu==='leotech-home'" src="./assets/img/home.png" width="200" alt="LEOTECH CORPORATE">
     </div>
     <!-- Toolbar -->
-    <div class="custom-toolbar">
-        <div class="navbutton">
-            <ul>
-                <li routerLinkActive="router-link-active">
-                    <a [routerLink]="['/accueil']">Accueil</a>
-                </li>
-                <li routerLinkActive="router-link-active">
-                    <a [routerLink]="['/services']">Nos services</a>
-                </li>
-                <li routerLinkActive="router-link-active">
-                    <a [routerLink]="['/propos']">A propos</a>
-                </li>
-                <li routerLinkActive="router-link-active">
-                    <a [routerLink]="['/contacts']">Contact</a>
-                </li>
-                <!-- <li>
-                <div class="seachbar">
-                    <input type="search" />
-                    <button type="button">Recherche</button>
-                </div>
-            </li> -->
 
+    <nav class="navbar  navbar-expand-lg navbar-dark py-0" style="background-color: #0b3084;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="d-block d-sm-none"  id="navbarTogglerDemo02">
+            <form class="form-inline my-0">
+                <input class=" w-40 mr-sm-2" type="search" placeholder="" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0">
+                  <svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 512 512'>
+                      <title>ionicons-v5-f</title>
+                      <path d='M221.09,64A157.09,157.09,0,1,0,378.18,221.09,157.1,157.1,0,0,0,221.09,64Z'
+                          style='fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:32px' />
+                      <line x1='338.29' y1='338.29' x2='448' y2='448'
+                          style='fill:none;stroke:#ffff;stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px' />
+                  </svg>
+                  </button>
+              </form>
+        </div>
+       
+        <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+            <ul class="navbar-nav mr-auto mt-0 p-0 mt-lg-0">
+              <li class="nav-item" routerLinkActive="router-link-active">
+                <a class="nav-link" (click)="initializeMenu()" [routerLink]="['/accueil']">Accueil<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item" routerLinkActive="router-link-active">
+                <a class="nav-link" [routerLink]="['/services']">Nos services</a>
+              </li>
+              <li class="nav-item" routerLinkActive="router-link-active">
+                <a class="nav-link" [routerLink]="['/propos']" >A Propos</a>
+              </li>
+              <li class="nav-item" routerLinkActive="router-link-active">
+                <a class="nav-link" [routerLink]="['/contacts']" >Contact</a>
+              </li>
             </ul>
-        </div>
-        <div class="seachbar">
-            <input type="search" />
-            <svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 512 512'><title>ionicons-v5-f</title><path d='M221.09,64A157.09,157.09,0,1,0,378.18,221.09,157.1,157.1,0,0,0,221.09,64Z' style='fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:32px'/><line x1='338.29' y1='338.29' x2='448' y2='448' style='fill:none;stroke:#ffff;stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px'/></svg>
-            <button type="button">Recherche</button>
-        </div>
-    </div>
+            <form class="form-inline my-2 my-lg-0 d-none d-sm-block">
+              <input class=" w-50 mr-sm-2" type="search" placeholder="" aria-label="Search">
+              <button class="btn btn-outline-light my-2 my-sm-0">
+                <svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 512 512'>
+                    <title>ionicons-v5-f</title>
+                    <path d='M221.09,64A157.09,157.09,0,1,0,378.18,221.09,157.1,157.1,0,0,0,221.09,64Z'
+                        style='fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:32px' />
+                    <line x1='338.29' y1='338.29' x2='448' y2='448'
+                        style='fill:none;stroke:#ffff;stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px' />
+                </svg>
+                  Recherche
+                </button>
+            </form>
+          </div>
+    </nav>
 </div>

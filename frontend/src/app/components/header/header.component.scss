@@ -1,93 +1,40 @@
-#header {
-    height: 100px;
+.logo {
+    height: 80px;
+    // border: 1px solid red;
+    background-color: #ececec;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+}
+
+li.router-link-active {
+    background-color: white;
+    a {
+        color: #0b3084 !important;
+    }
+}
+
+button {
+    border: none;
+    background: transparent;
+    color: white;
+}
+
+input {
+    background-color: transparent;
+    color: white;
+}
+
+@media  screen and(max-width: 576px) {
     .logo {
+        // border: 1px solid black;
         height: 60%;
         // border: 1px solid red;
         background-color: #ececec;
+        width: 100%;
         display: flex;
         align-items: center;
-        padding-left: 50px;
+        justify-content: center;
+        padding-left: 0px;
     }
-    .custom-toolbar {
-        // border: 1px solid orange;
-        width: 100%;
-        height: 40%;
-        background-color: #0b3084;
-        font-weight: 600;
-        .navbutton {
-            position: relative;
-             bottom: 16px;
-             right: 0;
-            // float: left;
-            height: 100%;
-            // display: inline-block;
-
-            // vertical-align: top;
-            // vertical-align: top;
-            // height: 100%;
-            width: 60%;
-            ul {
-                // border: 1px solid red;
-                height: 100%;
-                width: 100%;
-                li {
-                    // border: 1px solid green;
-                    list-style-type: none;
-                    height: 100%;
-                    display: inline-block;
-                    padding: 0 16px;
-                    a {
-                        position: relative;
-                        top: 10px;
-                        color: white;
-                        text-decoration: none;
-                    }
-                }
-                li.router-link-active {
-                    background-color: white;
-                    list-style-type: none;
-                    // height: 100%;
-                    display: inline-block;
-                    padding: 0 16px;
-                    a {
-                        color: #0b3084 !important;
-                        position: relative;
-                        top: 10px;
-                    }
-
-                    li:hover {
-                        opacity: 0.8;
-                    }
-                }
-            }
-        }
-
-        .seachbar {
-            height: 100%;
-            width: 35%;
-            position: relative;
-            bottom: 57px;
-            left: 65%;
-            display: flex;
-            align-items: center;
-            // display: inline-block;
-            // vertical-align: top;
-            // vertical-align: top;
-            // position: absolute;
-            // top: 85px;
-            // right: 0;
-            // border: 1px solid red;
-            input {
-                // position: relative;
-                // top: 10px;
-            }
-            button {
-                // position: relative;
-                // top: 10px;
-                border: none;
-                background: transparent;
-                color: white;
-            }
-        }
-    }
-}
+  }

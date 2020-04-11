@@ -9,6 +9,9 @@ import { HomeComponent } from './views/home/home.component';
 import { ServicesComponent } from './views/services/services.component';
 import { AboutComponent } from './views/about/about.component';
 import { ContactComponent } from './views/contact/contact.component';
+import { LeotechHomeComponent } from './views/home/leotech-home/leotech-home.component';
+import { LeotechCorporateComponent } from './views/home/leotech-corporate/leotech-corporate.component';
+import { LeotechComponent } from './views/home/leotech/leotech.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { ContactComponent } from './views/contact/contact.component';
     HomeComponent,
     ServicesComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    LeotechComponent,
+    LeotechHomeComponent,
+    LeotechCorporateComponent
   ],
   imports: [
     BrowserModule,
