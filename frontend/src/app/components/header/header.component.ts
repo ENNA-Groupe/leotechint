@@ -25,7 +25,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
         this.menu = menu;
       }
     );
-    this.data.setMenu('');
+    this.data.setMenu('int');
   }
 
   ngOnDestroy(){
@@ -34,7 +34,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
 
 
   initializeMenu(){
-    this.data.setMenu('');
+    this.data.setMenu('int');
   }
 
 

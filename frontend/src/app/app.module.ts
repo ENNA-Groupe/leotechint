@@ -9,9 +9,8 @@ import { HomeComponent } from './views/home/home.component';
 import { ServicesComponent } from './views/services/services.component';
 import { AboutComponent } from './views/about/about.component';
 import { ContactComponent } from './views/contact/contact.component';
-import { LeotechHomeComponent } from './views/home/leotech-home/leotech-home.component';
-import { LeotechCorporateComponent } from './views/home/leotech-corporate/leotech-corporate.component';
-import { LeotechComponent } from './views/home/leotech/leotech.component';
+import { FilterPipe } from './pipes/filter.pipe';
+import { FilterMenuPipe } from './pipes/filter-menu.pipe';
 
 @NgModule({
   declarations: [
@@ -22,9 +21,8 @@ import { LeotechComponent } from './views/home/leotech/leotech.component';
     ServicesComponent,
     AboutComponent,
     ContactComponent,
-    LeotechComponent,
-    LeotechHomeComponent,
-    LeotechCorporateComponent
+    FilterPipe,
+    FilterMenuPipe
   ],
   imports: [
     BrowserModule,
